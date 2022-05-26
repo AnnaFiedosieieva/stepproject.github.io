@@ -527,6 +527,18 @@ body {
 .slider-item {
   margin-right: 15px;
   margin-left: 15px;
+  transition: left 3s;
+}
+@keyframes active-img {
+50% {
+  transform: translateY(-35%);
+} 
+100% {
+  transform: translateY(0%);
+} 
+}
+.active-img {
+  animation: active-img 1s ease-in-out;
 }
 .slider-item-top {
   display: none;
