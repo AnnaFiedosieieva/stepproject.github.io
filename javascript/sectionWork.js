@@ -6,6 +6,7 @@ const workImages = document.querySelectorAll(
 );
 const loading = document.querySelector(".centered");
 const listWork = document.querySelectorAll(".work>.container>.list>.list-item");
+
 listWork.forEach((e) => {
   e.addEventListener("click", (e) => {
     listWork.forEach((e) => e.classList.remove("active"));

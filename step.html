@@ -14,10 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="./javascript/sectionNews.js"></script>
     <script defer src="./javascript/sectionService.js"></script>
     <script defer src="./javascript/sectionWork.js"></script>
     <script defer src="./javascript/sectionAbout.js"></script>
+    <script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script defer src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+    <script defer src="./javascript/sectionGallery.js"></script>
   </head>
   <body>
     <header class="header">
@@ -798,15 +803,6 @@
           </svg>
 <p class="about-subtitle">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>          
       </div>
-      <!-- <div class="current-slider-item">
-<p class="current-slider-item-name">
-
-</p>
-<p class="current-slider-item-job">
-
-</p>
-<img src="" alt="" class="current-slider-item-photo">
-      </div> -->
       <div class="slider-top">
         <div class="slider-item-top active">
           <p class="slider-item-name">Bella Swon</p>
@@ -858,38 +854,86 @@
             </div>
       
     </section>
-    <!-- <section class="gallery">
+    <section class="gallery">
       <div class="container">
+        <p class="title">Gallery of best images<p class="title-line"></p></p>
+
         <div class="grid">
           <div class="grid-item">
-          <img src="./images/gallery/img1.jpg" alt="" width="378" height="263">
-          <img src="./images/gallery/img2.jpg" alt="" width="378" height="263">
-          <img src="./images/gallery/img3.jpg" alt="" width="378" height="290">
-          <img src="./images/gallery/img4.jpg" alt="" width="378" height="380">
-          <img src="./images/gallery/img5.jpg" alt="" width="378" height="247">
-          <img src="./images/gallery/img1.jpg" alt="" width="378" height="254">
+            <img src="./images/gallery/img1.jpg" width="378" height="263" alt="">
+          </div>
+          <div class="grid-item">
+            <img src="./images/gallery/img4.jpg" width="378" height="380" alt="">
+          </div>
+          <div class="grid2 grid-item">
+            <div class="grid2-item">
+              <img src="./images/gallery/img3.jpg" width="180" height="168" alt="">
+            </div>
+            <div class="grid2-item">
+              <img src="./images/gallery/img8.jpg" width="180" height="168" alt="">
+            </div>
+          </div>
+          <div class="grid3 grid-item">
+            <div class="grid3-item">
+              <img src="./images/gallery/img6.jpg" width="124" height="92" alt="">
+            </div>
+            <div class="grid3-item">
+              <img src="./images/gallery/img7.jpg" width="119" height="92" alt="">
+            </div>
+            <div class="grid3-item">
+              <img src="./images/gallery/img2.jpg" width="115" height="92" alt="">
+            </div>
+            <div class="grid3-item">
+              <img src="./images/gallery/img8.jpg" width="124" height="92" alt="">
+            </div>
+            <div class="grid3-item">
+              <img src="./images/gallery/img9.jpg" width="119" height="92" alt="">
+            </div>
+            <div class="grid3-item">
+              <img src="./images/gallery/img10.jpg" width="115" height="92" alt="">
+            </div>
+            <div class="grid3-item">
+              <img src="./images/gallery/img1.jpg" width="124" height="92" alt="">
+            </div>
+            <div class="grid3-item">
+              <img src="./images/gallery/img11.jpg" width="119" height="92" alt="">
+            </div>
+            <div class="grid3-item">
+              <img src="./images/gallery/img12.jpg" width="115" height="92" alt="">
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <img src="./images/gallery/img2.jpg" width="378" height="263" alt="">
+          </div>
+
+          <div class="grid-item">
+            <img src="./images/gallery/img5.jpg" width="378" height="247" alt="">
+          </div>
+          <div class="grid-item">
+            <img src="./images/gallery/img13.jpg" width="363" height="373" alt="">
+          </div>
+          <div class="grid-item">
+            <img src="./images/gallery/img3.jpg" width="378" height="290" alt="">
+          </div>
+          <div class="grid-item">
+            <img src="./images/gallery/img1.jpg" width="378" height="254" alt="">
+          </div>
+                 
         </div>
-        <div class="grid-item grid-item-width2">
-          <img src="./images/gallery/img3.jpg" alt="" width="180" height="168">
-          <img src="./images/gallery/img8.jpg" alt="" width="180" height="168">
-        </div>
-        <div class="grid-item grid-item-width3">
-          <img class="grid-item grid-item--width3" src="./images/gallery/img6.jpg" alt="" width="124" height="168">
-          <img class="grid-item grid-item--width3" src="./images/gallery/img7.jpg" alt="" width="119" height="92">
-          <img class="grid-item grid-item--width3" src="./images/gallery/img2.jpg" alt="" width="115" height="92">
-          <img class="grid-item grid-item--width3" src="./images/gallery/img8.jpg" alt="" width="124" height="92">
-          <img class="grid-item grid-item--width3" src="./images/gallery/img9.jpg" alt="" width="119" height="92">
-          <img class="grid-item grid-item--width3" src="./images/gallery/img10.jpg" alt="" width="115" height="92">
-          <img class="grid-item grid-item--width3" src="./images/gallery/img1.jpg" alt="" width="124" height="92">
-          <img class="grid-item grid-item--width3" src="./images/gallery/img11.jpg" alt="" width="119" height="92">
-          <img class="grid-item grid-item--width3" src="./images/gallery/img12.jpg" alt="" width="115" height="92">
-        </div>
-        <div class="grid-item grid-item-width4">
-          <img class="grid-item grid-item--width4" src="./images/gallery/img13.jpg" alt="" width="363" height="373">
-        </div>
+              <div class = "centered">
+        <div class = "blob-1"></div>
+        <div class = "blob-2"></div>
       </div>
+        <div class="button-load-more">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z" fill="white"/>
+            </svg>      
+          <a class="button-main-link" href="javascript://">load more</a>
       </div>
-    </section> -->
+  
+      </div>
+  </section>
     </main>
     <footer>
       <div class="footer">
