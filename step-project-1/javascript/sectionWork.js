@@ -4,14 +4,13 @@ const buttonLoadMoreWork = document.querySelector(
 const workImages = document.querySelectorAll(
   ".work>.container>.images-grid-container>.work-img"
 );
-const loading = document.querySelector(".centered");
+const loading = document.querySelector(".work>.container>.centered");
 const listWork = document.querySelectorAll(".work>.container>.list>.list-item");
 
 listWork.forEach((e) => {
   e.addEventListener("click", (e) => {
     listWork.forEach((e) => e.classList.remove("active"));
     e.target.classList.add("active");
-    if (!e.target.closest(".list-item-link")) {
       workImages.forEach((elem) => {
         elem.classList.remove("filter");
         if (elem.dataset.filter === e.target.dataset.filter) {
@@ -20,7 +19,6 @@ listWork.forEach((e) => {
           workImages.forEach((e) => e.classList.add("filter"));
         }
       });
-    }
   });
 });
 
