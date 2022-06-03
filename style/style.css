@@ -367,11 +367,10 @@ body {
   border: 2px solid #18cfab;
 }
 .work-img-back-link-container:hover {
-  border-color: #fff;
   background-color: #18cfab;
 }
 .work-img-back-link-container:hover .work-icon {
-  fill: #ffffff;
+  fill: #e9edef;
 }
 
 .work-img-back-title {
@@ -608,7 +607,7 @@ body {
   border-color: #18cfab;
   background-color: #18cfab;
 }
-.grid{
+.grid {
   margin-bottom: 10px;
 }
 .grid3 {
