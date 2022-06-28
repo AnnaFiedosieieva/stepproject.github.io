@@ -276,34 +276,6 @@ body {
   font-size: 14px;
   color: #5c5c5c;
 }
-.advertisment {
-  background-image: url(./images/backgroundImgAdvertisment.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 476px;
-  margin-top: 91px;
-}
-.advertisment-title {
-  font-weight: 700;
-  font-size: 40px;
-  text-transform: uppercase;
-  color: #18cfab;
-  padding-top: 127px;
-  margin: 0;
-}
-.advertisment-subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  color: #d8d8d8;
-  margin-top: 12px;
-  margin-bottom: 0;
-}
-.advertisment .button-background {
-  margin-top: 62px;
-}
-.advertisment .container {
-  align-items: center;
-}
 .work {
   background-color: #e9edef;
 }
